@@ -1,7 +1,11 @@
-/*
-  Aquí van tus estilos o los @import './tus/ficheros'
-*/
+@import './layout/footer.scss';
+@import './layout/header.scss';
+@import './layout/landing.scss';
+@import './core/reset.scss';
+@import './core/variables.scss';
+
 
 body {
-  background-color: lightblue;
+  background-color: white;
 }
+
