@@ -1,0 +1,82 @@
+.form-share-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.create_Card_btn {
+  font-family: open-sans-regular;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: $tomate;
+  border: none;
+  color: white;
+  font-size: 18px;
+  padding: 15px 25px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.create_Card_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: $tomate;
+  border-radius: 2px;
+  padding: 2px;
+  padding-bottom: 1px;
+  font-size: 16px;
+  margin-right: 10px;
+  line-height: 1;
+}
+
+.icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1px;
+}
+/*.create_Card_btn.disabled {
+    background-color: lightgray ;
+    cursor: not-allowed;
+    color: white;
+}
+
+.disabled_icon {
+    color: lightgray ;
+}*/
+
+.splitter {
+    margin: 10px 0px;
+    border-top: 1px solid grey;
+    width: 90%;
+    font-size: 16px;
+}
+
+.created_Card {
+    color: grey;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.creat_Card_link {
+    list-style-type: none;
+    text-decoration: none;
+    color: $tomate;
+    margin-bottom: 15px;
+}
+
+.twitter_btn {
+    text-decoration: none;
+    background-color:#1DA1F2;
+    color: white;
+    border: none;
+    margin-bottom: 10px;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
