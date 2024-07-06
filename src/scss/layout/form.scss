@@ -1,0 +1,30 @@
+.fill__section {
+   display: flex;
+
+}
+
+.form__input {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    justify-content: space-between;
+    
+}
+
+//////image design properties /////////////
+.image__form {
+    width: 240px;
+    height: 200px;
+    margin: 10px 0;
+
+  }
+
+.img__btn {
+    padding: 0.5em;
+    width: 5rem;
+    border-radius: 1em;
+
+    
+}
+
+////////////////////////////////////////////

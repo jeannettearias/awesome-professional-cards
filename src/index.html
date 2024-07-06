@@ -4,20 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Adalab Web Starter Kit</title>
+    <script
+      src="https://kit.fontawesome.com/2ddc0e6d57.js"
+      crossorigin="anonymous"
+    ></script>
 
     <link rel="stylesheet" href="./scss/main.scss" />
     <link rel="icon" href="./images/favicon.png" />
   </head>
 
-  <body>
-    
-    <!-- Aquí van tus elementos HTML -->
+  <body class="body">
+    <load src="create.html" />
 
     <header>
-      <h1>Hola a todas</h1>
+      <load src="partials/header.html" />
     </header>
-    
-    <main>Holis</main>
+
+    <main class="main">
+      <load src="partials/landing.html" />
+      <load src="partials/form.html" />
+      <load src="partials/share.html" />
+      <load src="partials/preview.html" />
+    </main>
+
+    <footer>
+      <load src="partials/footer.html" />
+    </footer>
 
     <script src="./js/main.js"></script>
   </body>
