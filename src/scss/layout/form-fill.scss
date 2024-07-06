@@ -1,5 +1,12 @@
 .form-fill-section {
-    display: none;
-
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    
+    
 }
 
+.form__data {
+    column-gap: 5rem;
+
+}
