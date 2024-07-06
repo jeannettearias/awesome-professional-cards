@@ -1,14 +1,13 @@
-@import './layout/footer.scss';
-@import './layout/header.scss';
-@import './layout/landing.scss';
-@import './layout/form-fill.scss';
-@import './layout/form-share.scss';
-@import './layout/form-design.scss';
-@import './core/reset.scss';
-@import './core/variables.scss';
+@import "./core/reset.scss";
+@import "./core/variables.scss";
 
+@import "./layout/header.scss";
+@import "./layout/landing.scss";
+@import "./layout/form-fill.scss";
+@import "./layout/form-share.scss";
+@import "./layout/form-design.scss";
+@import "./layout/footer.scss";
 
 body {
   background-color: white;
 }
-

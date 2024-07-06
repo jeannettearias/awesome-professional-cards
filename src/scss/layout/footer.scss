@@ -1,0 +1,35 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border-top: solid 1px #d8d8d8;
+}
+.fotter__text {
+  margin-top: 18px;
+  margin-bottom: 12px;
+  opacity: 0.5;
+
+  font-family: OpenSans;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  color: var(--brownish-grey);
+}
+.footer__logo {
+  width: 103px;
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-inline: 41px;
+  }
+}
