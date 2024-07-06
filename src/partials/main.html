@@ -1,31 +1,54 @@
-<!-- links all form sections -->
-<load src="partials/form-fill.html" />
-<load src="partials/form-design.html" />
-<load src="partials/form-share.html" />
-
-
 
 <!-- main code -->
 
 <main class="main">
-<section class="main-preview">
+<!-- Preview -->
+    <section class="main-preview">
 
 </section>
 
-<fieldset class="form-fill">
+<!-- FORM  -->
+<form>
 
-
-</fieldset>
-
-<fieldset class="form-share">
-
-
-</fieldset>
-
+<!-- FORM DESIGN -->    
 <fieldset class="form-design">
-
-
+    <legend class="form__legend">
+        icono 
+        Diseña
+        icono
+    </legend>
+    
+    <div>
+        <load src="partials/form-design.html" />
+    </div>
 </fieldset>
+
+<!-- FORM FILL -->  
+<fieldset class="form-fill">
+    <legend class="form__legend">
+        icono
+        Rellena
+        icono
+    </legend>
+    
+    <div>
+        <load src="partials/form-fill.html" />
+    </div>
+</fieldset>
+
+<!-- FORM SHARE -->  
+<fieldset class="form-share">
+    <legend class="form__legend">
+        icono
+        Comparte
+        icono
+    </legend>
+    
+    <div>
+        <load src="partials/form-share.html" />
+    </div>
+</fieldset>
+</form>
 
 </main>
 
