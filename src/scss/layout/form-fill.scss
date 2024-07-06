@@ -4,26 +4,41 @@
     align-items: stretch;
     padding: 1rem;
     width: 100%;
+    font-size: 14px;
+    font-family: OpenSans;
+    color: #114e4e;
+
 }
 
 .form__data {
     display: flex;
     flex-direction: column;
     margin-bottom: 0.5em;
+    
   
 }
 
 .form__label {
     margin-bottom: 0.5em;
+    color: #114e4e;
 
 }
 
 .form__input { 
     margin-bottom: 1em;
-    height: auto;
+    height: 1.6rem;
     width: auto;
+    border: solid 1px #a2deaf;
+    line-height: 20px;
+    padding: 1em;
+    color: #114e4e;
+    background: transparent;
 
 }
+::placeholder {color:#c5c5c5
+
+}
+
 
 //image button styles
 
@@ -31,4 +46,16 @@
     margin-bottom: 1rem;
 
 }
+
+.form__btn {
+    padding: 0.5em;
+    border-radius: 0.5em;
+    background-color: rgba(231, 102, 4, 0.848);
+    border: solid orange;
+    color: white;
+    width: 120px;
+    
+}
+
+
 
