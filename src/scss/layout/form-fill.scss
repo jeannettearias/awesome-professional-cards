@@ -1,12 +1,34 @@
 .form-fill-section {
     display: flex;
     flex-direction: column;
-    padding: 2rem;
-    
-    
+    align-items: stretch;
+    padding: 1rem;
+    width: 100%;
 }
 
 .form__data {
-    column-gap: 5rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5em;
+  
+}
+
+.form__label {
+    margin-bottom: 0.5em;
 
 }
+
+.form__input { 
+    margin-bottom: 1em;
+    height: auto;
+    width: auto;
+
+}
+
+//image button styles
+
+.form__img {
+    margin-bottom: 1rem;
+
+}
+

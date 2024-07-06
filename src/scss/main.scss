@@ -15,7 +15,7 @@ body {
 }
 
 .main {
-  background-color: rgba(205, 201, 201, 0.682);
+  background-color:#f5f5f5 #ffffff;
 
   display: flex;
   flex-direction: column;
@@ -24,4 +24,10 @@ body {
 
 } 
 
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+
+}
 
