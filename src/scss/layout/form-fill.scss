@@ -1,61 +1,69 @@
 .form-fill-section {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    padding: 1rem;
-    width: 100%;
-    font-size: 14px;
-    font-family: OpenSans;
-    color: #114e4e;
-
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin-top: 1rem;
+  width: 100%;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  color: #114e4e;
 }
 
 .form__data {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 0.5em;
-    
-  
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5em;
 }
 
 .form__label {
-    margin-bottom: 0.5em;
-    color: #114e4e;
-
+  margin-bottom: 0.5em;
+  color: $dark-green-blue;
 }
 
-.form__input { 
-    margin-bottom: 1em;
-    height: 1.6rem;
-    width: auto;
-    border: solid 1px #a2deaf;
-    line-height: 20px;
-    padding: 1em;
-    color: #114e4e;
-    background: transparent;
-
+.form__input {
+  margin-bottom: 1em;
+  height: 2rem;
+  width: auto;
+  border: solid 1px $hospital-green;
+  line-height: 20px;
+  padding: 1em;
+  color: $dark-green-blue;
+  background: transparent;
 }
-::placeholder {color:#c5c5c5
-
+::placeholder {
+  color: $pinkish-grey;
+  font-size: 14px;
 }
-
 
 //image button styles
 
-.form__img {
-    margin-bottom: 1rem;
+.img__box {
+  display: flex;
+  align-items: center;
+}
 
+.form__img {
+  margin-bottom: 1rem;
 }
 
 .form__btn {
-    padding: 0.5em;
-    border-radius: 0.5em;
-    background-color: rgba(231, 102, 4, 0.848);
-    border: solid orange;
-    color: white;
-    width: 120px;
-    
+  padding: 0.7em;
+  border-radius: 0.5em;
+  background-color: $dull-orange;
+  border: $dull-orange;
+  color: $white-four;
+  width: 140px;
 }
 
+//checkbox styles
+.form__checkbox {
+  border: solid 1px $hospital-green;
+  width: 2rem;
+  height: 2rem;
+  margin-left: 1rem;
+}
 
-
+.form__checkbox:hover {
+  color: $hospital-green;
+  accent-color: $hospital-green;
+}
