@@ -4,9 +4,8 @@
   align-items: stretch;
   margin-top: 1rem;
   width: 100%;
-  font-size: 14px;
   font-family: "Open Sans", sans-serif;
-  color: #114e4e;
+  color: $dark-green-blue;
 }
 
 .form__data {
@@ -15,9 +14,10 @@
   margin-bottom: 0.5em;
 }
 
-.form__label {
+.form__fill_Label {
   margin-bottom: 0.5em;
   color: $dark-green-blue;
+  font-size: 14px;
 }
 
 .form__input {
@@ -53,6 +53,7 @@
   border: $dull-orange;
   color: $white-four;
   width: 140px;
+  font-size: 14px;
 }
 
 //checkbox styles
