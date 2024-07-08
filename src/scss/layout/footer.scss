@@ -32,6 +32,8 @@
 }
 @media (min-width: 768px) {
   .footer {
+    max-width: 1600px;
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
