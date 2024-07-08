@@ -1,0 +1,60 @@
+.form_design_section {
+  display: flex;
+  justify-content: space-between;
+  margin-block-start: 20px;
+}
+
+.colors_palettes {
+  li {
+    list-style-type: none;
+  }
+}
+
+.input_palette {
+  margin-right: 20px;
+  width: 20px;
+}
+
+.palette_label {
+  display: inline-flex;
+  padding-block-start: 20px;
+}
+
+/* <!---COLORES ----> */
+.palette {
+  width: 30px;
+  height: 30px;
+}
+
+/* <!---COLORES: PALETA 1 ----> */
+.palette_color1 {
+  background-color: $dark-green-blue;
+}
+.palette_color2 {
+  background-color: $dirty-blue;
+}
+.palette_color3 {
+  background-color: $hospital-green;
+}
+
+/* <!---COLORES: PALETA 2 ----> */
+.palette_color4 {
+  background-color: $dried-blood;
+}
+.palette_color5 {
+  background-color: $rusty-red;
+}
+.palette_color6 {
+  background-color: $tomate;
+}
+
+/* <!---COLORES: PALETA 3 ----> */
+.palette_color7 {
+  background-color: $slate;
+}
+.palette_color8 {
+  background-color: $faded-orange;
+}
+.palette_color9 {
+  background-color: $light-grey-blue;
+}

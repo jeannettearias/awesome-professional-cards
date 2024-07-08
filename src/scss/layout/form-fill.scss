@@ -1,5 +1,70 @@
 .form-fill-section {
-    display: none;
-
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin-top: 1rem;
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+  color: $dark-green-blue;
 }
 
+.form__data {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5em;
+}
+
+.form__fill_Label {
+  margin-bottom: 0.5em;
+  color: $dark-green-blue;
+  font-size: 14px;
+}
+
+.form__input {
+  margin-bottom: 1em;
+  height: 2rem;
+  width: auto;
+  border: solid 1px $hospital-green;
+  line-height: 20px;
+  padding: 1em;
+  color: $dark-green-blue;
+  background: transparent;
+}
+::placeholder {
+  color: $pinkish-grey;
+  font-size: 14px;
+}
+
+//image button styles
+
+.img__box {
+  display: flex;
+  align-items: center;
+}
+
+.form__img {
+  margin-bottom: 1rem;
+}
+
+.form__btn {
+  padding: 0.7em;
+  border-radius: 0.5em;
+  background-color: $dull-orange;
+  border: $dull-orange;
+  color: $white-four;
+  width: 140px;
+  font-size: 14px;
+}
+
+//checkbox styles
+.form__checkbox {
+  border: solid 1px $hospital-green;
+  width: 2rem;
+  height: 2rem;
+  margin-left: 1rem;
+}
+
+.form__checkbox:hover {
+  color: $hospital-green;
+  accent-color: $hospital-green;
+}
