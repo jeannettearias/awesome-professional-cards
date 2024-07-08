@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
   border-top: solid 1px #d8d8d8;
 }
 .fotter__text {
@@ -10,26 +9,34 @@
   margin-bottom: 12px;
   opacity: 0.5;
 
-  font-family: OpenSans;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.43;
-  letter-spacing: normal;
-  color: var(--brownish-grey);
+
+  color: $brownish-grey;
 }
 .footer__logo {
   width: 103px;
   height: 40px;
   margin-bottom: 20px;
+  margin-left: 50px;
 }
 
+.fotter__text {
+  margin-left: 40px;
+  margin-bottom: 25px;
+}
+.footer__logo {
+  margin-right: 60px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
 @media (min-width: 768px) {
   .footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-inline: 41px;
+    align-items: flex-end;
+    width: 100%;
+    height: 10vh;
   }
 }
