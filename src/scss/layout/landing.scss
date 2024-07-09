@@ -1,6 +1,7 @@
-.main__landing {
+.body {
   background-color: #f5f5f5;
-
+}
+.main__landing {
   width: 100%;
   max-width: 1600px;
   padding: 60px;
@@ -9,44 +10,44 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 87vh;
 }
 
 .section__1 {
   margin-left: 35px;
   margin-right: 35px;
-}
 
-.section__1__img {
-  width: 250px;
-  height: 63px;
-  margin-inline: 35px;
-  margin-top: 95px;
-  margin-bottom: 35.4px;
-}
+  &__img {
+    width: 250px;
+    height: 63px;
+    margin-inline: 35px;
+    margin-top: 5vh;
+    margin-bottom: 35.4px;
+  }
 
-.section__1__text__1 {
-  margin-left: 47.7px;
-  margin-right: 49.3px;
+  &__text__1 {
+    margin-left: 47.7px;
+    margin-right: 49.3px;
 
-  font-family: "Merriweather", serif;
-  font-size: 19.2px;
-  font-weight: 900;
+    font-family: "Merriweather", serif;
+    font-size: 19.2px;
+    font-weight: 900;
 
-  text-align: center;
-  color: $dull-orange;
-}
+    text-align: center;
+    color: $dull-orange;
+  }
 
-.section__1__text__2 {
-  margin-left: 27.2px;
-  margin-right: 28px;
+  &__text__2 {
+    margin-left: 27.2px;
+    margin-right: 28px;
 
-  font-family: "Open Sans", sans-serif;
-  font-size: 12.8px;
-  font-weight: 500;
+    font-family: "Open Sans", sans-serif;
+    font-size: 12.8px;
+    font-weight: 500;
 
-  text-align: center;
-  color: $dark-green-blue;
+    text-align: center;
+    color: $dark-green-blue;
+  }
 }
 
 .section__2__icons {
@@ -85,25 +86,25 @@
 .section__2__Btn {
   margin-left: 90px;
   margin-right: 101px;
-  margin-top: 50px;
-  margin-bottom: 30px;
+  margin-top: 7vh;
 
   size: 42px 129px;
 
   padding: 10px 25px;
   border-radius: 21px;
   background-color: #438792;
-}
-.section__2__Btn__text {
-  margin-block: 10px;
-  text-decoration: none;
-  font-family: "Open Sans", sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  text-transform: uppercase;
 
-  text-align: center;
-  color: #ffffff;
+  &__text {
+    margin-block: 10px;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    text-align: center;
+    color: #ffffff;
+  }
 }
 @media (min-width: 768px) {
   .section__1__img {
