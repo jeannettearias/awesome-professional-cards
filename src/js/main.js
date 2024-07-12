@@ -16,10 +16,12 @@ let data = {
   photo: "",
 };
 
-//QUERY SELECTORS 
+//QUERY SELECTORS
 
+import "./reset";
 //IMPORTS
 
-import './form-share.js';
-import "/reset.js";
+import "./form-share.js";
+import "./preview.js";
+import "./reset.js";
 import "./form-design.js";
