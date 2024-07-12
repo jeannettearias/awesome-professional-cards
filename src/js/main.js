@@ -25,4 +25,4 @@ data = {
 
 //IMPORTS
 
-import "./reset";
+import('./reset');

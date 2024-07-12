@@ -61,7 +61,7 @@ const handleInputPhone = (ev) => {
     phonePreview.innerHTML = data.phone;
 
 };
-jobInput.addEventListener('input', handleInputPhone);
+phoneInput.addEventListener('input', handleInputPhone);
 
 // listen the email event and change the href link (js__emailPreview)
 const handleInputEmail = (ev) => {
@@ -70,7 +70,7 @@ const handleInputEmail = (ev) => {
     emailPreview.innerHTML = data.email;
 
 };
-jobInput.addEventListener('input', handleInputEmail);
+emailInput.addEventListener('input', handleInputEmail);
 
 // listen the linkedin event and change the href link (js__linkedinPreview)
 const handleInputLinkedin = (ev) => {
@@ -79,7 +79,7 @@ const handleInputLinkedin = (ev) => {
     linkedinPreview.innerHTML = data.linkedin;
 
 };
-jobInput.addEventListener('input', handleInputLinkedin);
+linkedinInput.addEventListener('input', handleInputLinkedin);
 
 // listen the github event and change the href link (js__githubPreview)
 const handleInputGithub = (ev) => {
@@ -88,7 +88,7 @@ const handleInputGithub = (ev) => {
     githubPreview.innerHTML = data.github;
 
 };
-jobInput.addEventListener('input', handleInputGithub);
+githubInput.addEventListener('input', handleInputGithub);
 
 
 
