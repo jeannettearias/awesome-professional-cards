@@ -3,9 +3,9 @@
 const inputPalettes1 = document.querySelector(".js__inputPalette1");
 const inputPalettes2 = document.querySelector(".js__inputPalette2");
 const inputPalettes3 = document.querySelector(".js__inputPalette3");
-const linePalette = document.querySelector(".js__linePalette");
-const namePalette = document.querySelector(".js__namePalette");
-const bordersPalette = document.querySelectorAll(".js__borderPalette");
+const linePalette = document.querySelector(".js__linePreview");
+const namePalette = document.querySelector(".js__namePreview");
+const linksPalette = document.querySelectorAll(".js__linkPreview");
 
 function refreshPalletsStyles() {
   console.log(`Estyo refrescando a paleta ${data.palette}`);
@@ -30,7 +30,7 @@ function refreshPalletsStyles() {
 
   //------BORDER & ICON
 
-  for (const item of bordersPalette) {
+  for (const item of linksPalette) {
     item.classList.remove(
       "border_color_palette1",
       "border_color_palette2",
