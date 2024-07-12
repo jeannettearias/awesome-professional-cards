@@ -2,7 +2,7 @@
 
 //VARIABLES GLOBALES
 
-data = {
+let data = {
   palette: 1,
   name: "",
   job: "",
@@ -13,8 +13,9 @@ data = {
   photo: "",
 };
 
-//QUERY SELECTORS
+//QUERY SELECTORS 
 
 //IMPORTS
 
-import "./reset";
+import "./reset.js";
+import './form-share.js';
