@@ -15,6 +15,4 @@ data = {
 
 //QUERY SELECTORS
 
-//IMPORTS
-
 import "./reset";
