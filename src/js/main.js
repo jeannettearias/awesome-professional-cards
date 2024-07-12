@@ -1,14 +1,9 @@
-'use strict'
-
-//Global configurations
-import('./form-fill')
-
-//Global variables
-
-
 "use strict";
 
-//VARIABLES GLOBALES
+//Global configurations
+import("./form-fill");
+
+//Global variables
 
 let data = {
   palette: 1,
@@ -26,4 +21,5 @@ let data = {
 //IMPORTS
 
 import './form-share.js';
-import('./reset');
+import "/reset.js";
+import "./form-design.js";
