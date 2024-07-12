@@ -1,4 +1,13 @@
-.form_design_section {
+.design__form {
+  display: none;
+}
+
+.design__form.visible {
+  display: block;
+}
+
+.form_design_section.visible {
+  display: block;
   display: flex;
   justify-content: space-between;
   margin-block-start: 20px;
