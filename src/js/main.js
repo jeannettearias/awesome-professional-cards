@@ -1,8 +1,28 @@
 'use strict'
 
 //Global configurations
-import ('./form-fill')
+import('./form-fill')
 
 //Global variables
 
 
+"use strict";
+
+//VARIABLES GLOBALES
+
+data = {
+  palette: 1,
+  name: "",
+  job: "",
+  phone: "",
+  email: "",
+  linkedin: "",
+  github: "",
+  photo: "",
+};
+
+//QUERY SELECTORS
+
+//IMPORTS
+
+import "./reset";

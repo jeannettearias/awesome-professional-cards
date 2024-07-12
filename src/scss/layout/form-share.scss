@@ -58,21 +58,17 @@
     color: lightgray ;
 }*/
 
-.splitter {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 10px 0px;
-  border-top: 1px solid grey;
-  width: 90%;
-  font-size: 16px;
-}
-
 .created_Card {
   color: #54585a;
   font-weight: bold;
   font-size: 16px;
   margin-bottom: 15px;
+  border: 0;
+  border-top: 2px groove #a0c0cf;
+  padding-top: 15px;
+  width: 100%;
+  text-align: center;
+  align-items: center;
 }
 
 .creat_Card_link {
