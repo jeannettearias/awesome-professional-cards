@@ -10,7 +10,7 @@ import('./form-fill')
 
 //VARIABLES GLOBALES
 
-data = {
+let data = {
   palette: 1,
   name: "",
   job: "",

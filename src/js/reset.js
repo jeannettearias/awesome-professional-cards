@@ -1,4 +1,4 @@
-const resetBtn = document.queryselector(".js__resetBtn");
+const resetBtn = document.querySelector(".js__resetBtn");
 
 const handleClickReset = (ev) => {
   data = {
