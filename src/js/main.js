@@ -1,8 +1,11 @@
 "use strict";
 
-//VARIABLES GLOBALES
+//Global configurations
+import("./form-fill");
 
-data = {
+//Global variables
+
+let data = {
   palette: 1,
   name: "",
   job: "",
@@ -16,3 +19,9 @@ data = {
 //QUERY SELECTORS
 
 import "./reset";
+//IMPORTS
+
+import "./form-share.js";
+import "./preview.js";
+import "./reset.js";
+import "./form-design.js";
