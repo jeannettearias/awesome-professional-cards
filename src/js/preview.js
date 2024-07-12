@@ -10,17 +10,16 @@ const linkEmail = document.querySelector(".js__link__email");
 const linkLinkedin = document.querySelector(".js__link__linkedin");
 const linkGithub = document.querySelector(".js__link__github");
 
-const updateTexts = () => { };
+const updateTexts = () => {};
 
-const updateLinks = (ev) => {
+const updateLinks = () => {
   linkPhone.href = `tel:${data.phone}`;
-  linkLinkedin.href = `https://www.linkedin.com/in/${inputLinkedin.value}`;
-  linkGithub.href = `http://github.com/${inputGithub.value}`;
-  linkEmail.href = `mailto:${inputEmail.value}`;
+  linkLinkedin.href = `https://www.linkedin.com/in/${data.linkedin}`;
+  linkGithub.href = `http://github.com/${data.github}`;
+  linkEmail.href = `mailto:${data.email}`;
 };
-updateLinks();
 
-const updateColors = () => { };
+const updateColors = () => {};
 
 const updatePreview = () => {
   updateTexts();
@@ -28,5 +27,4 @@ const updatePreview = () => {
   updateLinks();
 
   updateColors();
-
 };
