@@ -1,6 +1,6 @@
 "use strict";
 
-/*const createCardBtn = document.querySelector('.js__createCardBtn');
+const createCardBtn = document.querySelector('.js__createCardBtn');
 
 const handleClickCreate = (ev) => {
     ev.preventDefault();
@@ -9,4 +9,4 @@ const handleClickCreate = (ev) => {
 
 }
 
-createCardBtn.addEventListener('click', handleClickCreate);*/
+createCardBtn.addEventListener('click', handleClickCreate);

@@ -1,3 +1,11 @@
+'use strict'
+
+//Global configurations
+import('./form-fill')
+
+//Global variables
+
+
 "use strict";
 
 //VARIABLES GLOBALES
@@ -17,5 +25,5 @@ let data = {
 
 //IMPORTS
 
-import "./reset.js";
 import './form-share.js';
+import('./reset');
