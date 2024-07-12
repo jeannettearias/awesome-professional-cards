@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 //QUERY SELECTORS
 const nameInput = document.querySelector('.js__input_name');
@@ -15,22 +15,6 @@ const emailPreview = document.querySelector('.js__emailPreview');
 const linkedinPreview = document.querySelector('.js__linkedinPreview');
 const githubPreview = document.querySelector('.js__githubPreview');
 
-
-
-//GLOBAL VARIABLES
-
-let data = {
-    //   palette: 1,
-    name: '',
-    job: '',
-    photo: '',
-    email: '',
-    phone: '',
-    linkedin: '',
-    github: '',
-
-};
-
 //FUNCTIONS AND EVENTS
 
 //listen and display the NAME input by User
@@ -39,8 +23,13 @@ const handleInputName = (ev) => {
     data.name = nameInput.value;
     namePreview.innerHTML = data.name;
 
+    //save the data in Localstorage
+    //localStorage.setItem('data', JSON.stringify(data));
+
+    console.log(data);
 };
 nameInput.addEventListener('input', handleInputName);
+
 
 //listen and display the JOB input by User
 const handleInputJob = (ev) => {
@@ -48,6 +37,10 @@ const handleInputJob = (ev) => {
     data.job = jobInput.value;
     jobPreview.innerHTML = data.job;
 
+    //save the data in Localstorage
+    //localStorage.setItem('data', JSON.stringify(data));
+
+    console.log(data);
 };
 jobInput.addEventListener('input', handleInputJob);
 
@@ -55,7 +48,10 @@ jobInput.addEventListener('input', handleInputJob);
 const handleInputPhone = (ev) => {
 
     data.phone = phoneInput.value;
-    phonePreview.innerHTML = data.phone;
+    phonePreview.setAttribute('href', data.phone);
+
+    //save the data in Localstorage
+    //localStorage.setItem('data', JSON.stringify(data));
 
 };
 phoneInput.addEventListener('input', handleInputPhone);
@@ -63,32 +59,69 @@ phoneInput.addEventListener('input', handleInputPhone);
 // listen the email event and change the href link (js__emailPreview)
 const handleInputEmail = (ev) => {
 
-    data.email = emailInput.value;
-    emailPreview.innerHTML = data.email;
 
+    if (data.email !== emailInput.value) {
+        data.email = emailInput.value;
+        emailPreview.setAttribute('href', data.email);
+
+        //save the data in Localstorage
+        //localStorage.setItem('data', JSON.stringify(data));
+    }
+    console.log(data);
 };
+
 emailInput.addEventListener('input', handleInputEmail);
+
 
 // listen the linkedin event and change the href link (js__linkedinPreview)
 const handleInputLinkedin = (ev) => {
 
     data.linkedin = linkedinInput.value;
-    linkedinPreview.innerHTML = data.linkedin;
+    linkedinPreview.setAttribute('href', data.linkedin);
 
+    //save the data in Localstorage
+    //localStorage.setItem('data', JSON.stringify(data));
+
+    console.log(data);
 };
 linkedinInput.addEventListener('input', handleInputLinkedin);
+
 
 // listen the github event and change the href link (js__githubPreview)
 const handleInputGithub = (ev) => {
 
     data.github = githubInput.value;
-    githubPreview.innerHTML = data.github;
+    githubPreview.setAttribute('href', data.github);
 
+    //save the data in Localstorage
+    //localStorage.setItem('data', JSON.stringify(data));
+
+    console.log(data);
 };
 githubInput.addEventListener('input', handleInputGithub);
 
 
+//save the data in Localstorage
+localStorage.setItem('data', JSON.stringify(data));
 
+//Load page with the data stored in localstorage
+
+function renderInputs(dfl) {
+    nameInput.setAttribute('value', dfl.name);
+    jobInput.setAttribute('value', dfl.job);
+    phoneInput.setAttribute('value', dfl.phone);
+    emailInput.setAttribute('value', dfl.email);
+    linkedinInput.setAttribute('value', dfl.linkedin);
+    githubInput.setAttribute('value', dfl.github);
+
+}
+
+const dataFromLS = JSON.parse(localStorage.getItem('data'));
+
+if (dataFromLS !== null) {
+    renderInputs(dataFromLS);
+
+};
 
 
 //load the page 

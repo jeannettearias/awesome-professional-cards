@@ -1,8 +1,5 @@
 'use strict'
 
-//Global configurations
-import('./form-fill')
-
 //Global variables
 
 
@@ -23,6 +20,7 @@ let data = {
 
 //QUERY SELECTORS
 
-//IMPORTS
+import "./form-fill.js";
+import "./preview.js";
+import "./reset.js";
 
-import('./reset');
