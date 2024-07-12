@@ -37,6 +37,18 @@
   background-color: $hospital-green;
 }
 
+//---------------------
+
+.color_palette1 {
+  color: $dark-green-blue;
+}
+.line_color_palette1 {
+  background-color: $dirty-blue;
+}
+.border_color_palette1 {
+  border-color: $hospital-green;
+}
+
 /* <!---COLORES: PALETA 2 ----> */
 .palette_color4 {
   background-color: $dried-blood;
@@ -48,6 +60,18 @@
   background-color: $tomate;
 }
 
+//---------------------
+
+.color_palette2 {
+  color: $dried-blood;
+}
+.line_color_palette2 {
+  background-color: $rusty-red;
+}
+.border_color_palette2 {
+  border-color: $tomate;
+}
+
 /* <!---COLORES: PALETA 3 ----> */
 .palette_color7 {
   background-color: $slate;
@@ -57,4 +81,16 @@
 }
 .palette_color9 {
   background-color: $light-grey-blue;
+}
+
+//---------------------
+
+.color_palette3 {
+  color: $slate;
+}
+.line_color_palette3 {
+  background-color: $faded-orange;
+}
+.border_color_palette3 {
+  border-color: $light-grey-blue;
 }

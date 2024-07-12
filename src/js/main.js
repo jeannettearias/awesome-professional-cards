@@ -17,4 +17,5 @@ let data = {
 
 //IMPORTS
 
+import "./reset.js";
 import "./form-design.js";
