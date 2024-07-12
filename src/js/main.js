@@ -2,7 +2,7 @@
 
 //VARIABLES GLOBALES
 
-data = {
+let data = {
   palette: 1,
   name: "",
   job: "",
@@ -17,4 +17,4 @@ data = {
 
 //IMPORTS
 
-import "./reset";
+import "./form-design.js";
