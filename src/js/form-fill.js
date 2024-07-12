@@ -35,12 +35,9 @@ let data = {
 
 //listen and display the NAME input by User
 const handleInputName = (ev) => {
-    //const value = nameInput.value;
-    //namePreview.innerHTML = value;
 
     data.name = nameInput.value;
     namePreview.innerHTML = data.name;
-
 
 };
 nameInput.addEventListener('input', handleInputName);
@@ -89,7 +86,6 @@ const handleInputGithub = (ev) => {
 
 };
 githubInput.addEventListener('input', handleInputGithub);
-
 
 
 
