@@ -11,19 +11,15 @@ const linkLinkedin = document.querySelector(".js__link__linkedin");
 const linkGithub = document.querySelector(".js__link__github");
 
 const updateTexts = () => {
-
-  if (data.name === '') {
-    namePreview.innerHTML = 'Nombre Apellidos';
-  }
-  else {
+  if (data.name === "") {
+    namePreview.innerHTML = "Nombre Apellidos";
+  } else {
     namePreview.innerHTML = data.name;
   }
 
-
-  if (data.job === '') {
-    jobPreview.innerHTML = 'Front-end developer';
-  }
-  else {
+  if (data.job === "") {
+    jobPreview.innerHTML = "Front-end developer";
+  } else {
     jobPreview.innerHTML = data.job;
   }
 };
@@ -35,7 +31,9 @@ const updateLinks = () => {
   linkEmail.href = `mailto:${data.email}`;
 };
 
-const updateColors = () => { };
+const updateColors = () => {
+  refreshPalletsStyles();
+};
 
 const updatePreview = () => {
   updateTexts();
