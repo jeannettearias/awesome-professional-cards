@@ -10,9 +10,25 @@ const linkEmail = document.querySelector(".js__link__email");
 const linkLinkedin = document.querySelector(".js__link__linkedin");
 const linkGithub = document.querySelector(".js__link__github");
 
-const updateTexts = () => { };
+const updateTexts = () => {
 
-const updateLinks = (ev) => {
+  if (data.name === '') {
+    namePreview.innerHTML = 'Nombre Apellidos';
+  }
+  else {
+    namePreview.innerHTML = data.name;
+  }
+
+
+  if (data.job === '') {
+    jobPreview.innerHTML = 'Front-end developer';
+  }
+  else {
+    jobPreview.innerHTML = data.job;
+  }
+};
+
+const updateLinks = () => {
   linkPhone.href = `tel:${data.phone}`;
   linkLinkedin.href = `https://www.linkedin.com/in/${inputLinkedin.value}`;
   linkGithub.href = `http://github.com/${inputGithub.value}`;
