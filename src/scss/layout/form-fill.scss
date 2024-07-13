@@ -26,6 +26,7 @@
 .form__fill_Label {
   margin-bottom: 0.5em;
   color: $dark-green-blue;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
 }
 
@@ -45,7 +46,6 @@
 }
 
 //image button styles
-
 .img__box {
   display: flex;
   align-items: center;
@@ -66,14 +66,16 @@
 }
 
 //checkbox styles
-.form__checkbox {
+.form__photothumb {
   border: solid 1px $hospital-green;
   width: 2rem;
   height: 2rem;
   margin-left: 1rem;
+  background: transparent;
+  background-position: center;
+  background-size: cover;
 }
 
-.form__checkbox:hover {
-  color: $hospital-green;
-  accent-color: $hospital-green;
+.hidden {
+  display: none;
 }

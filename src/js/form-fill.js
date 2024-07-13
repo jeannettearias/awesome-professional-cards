@@ -32,7 +32,6 @@ const handleInputJob = (ev) => {
     data.job = jobInput.value;
     updatePreview();
 
-
 };
 jobInput.addEventListener('input', handleInputJob);
 
@@ -52,9 +51,7 @@ const handleInputEmail = (ev) => {
     updatePreview();
 
 };
-
 emailInput.addEventListener('input', handleInputEmail);
-
 
 // listen the linkedin event and change the href link (js__linkedinPreview)
 const handleInputLinkedin = (ev) => {
@@ -62,8 +59,6 @@ const handleInputLinkedin = (ev) => {
     data.linkedin = linkedinInput.value;
     updatePreview();
 
-    //save the data in Localstorage
-    //localStorage.setItem('data', JSON.stringify(data));
 };
 linkedinInput.addEventListener('input', handleInputLinkedin);
 
@@ -74,17 +69,15 @@ const handleInputGithub = (ev) => {
     data.github = githubInput.value;
     updatePreview();
 
-    //save the data in Localstorage
-    //localStorage.setItem('data', JSON.stringify(data));
-
 };
 githubInput.addEventListener('input', handleInputGithub);
 
+//IMAGE WORKING
 
-//save the data in Localstorage
+
+
+//LOCALSTORAGE 
 localStorage.setItem('data', JSON.stringify(data));
-
-
 
 //Load page with the data stored in localstorage
 function renderInputs(dfl) {
@@ -104,10 +97,4 @@ if (dataFromLS !== null) {
 };
 
 
-//load the page 
-// API https://dev.adalab.es/api/card/
-// 
-//
-//
-/////////////////////////////////////
-
+//DATA VALIDATIONS - before send to API
