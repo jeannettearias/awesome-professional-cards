@@ -1,4 +1,5 @@
 const resetBtn = document.querySelector(".js__resetBtn");
+const formReset = document.querySelector(".js__form");
 
 const handleClickReset = (ev) => {
   data = {
@@ -11,6 +12,9 @@ const handleClickReset = (ev) => {
     github: "",
     photo: "",
   };
+
+  formReset.reset();
+
   updatePreview();
 };
 
