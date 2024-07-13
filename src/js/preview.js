@@ -14,7 +14,7 @@ const updateTexts = () => { };
 
 const updateLinks = (ev) => {
   linkPhone.href = `tel:${inputPhone.value}`;
-  linkLinkedin.href = `https://www.${inputLinkedin.value}`;
+  linkLinkedin.href = `https://www.linkedin.com/in/${inputLinkedin.value}`;
   linkGithub.href = `http://github.com/${inputGithub.value}`;
   linkEmail.href = `mailto:${inputEmail.value}`;
 };
