@@ -20,3 +20,4 @@ import "./form-share.js";
 import "./preview.js";
 import "./reset.js";
 import "./form-design.js";
+import "./image.js";
