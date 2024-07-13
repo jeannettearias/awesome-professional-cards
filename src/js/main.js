@@ -18,7 +18,6 @@ let data = {
 
 //QUERY SELECTORS
 
-import "./reset";
 //IMPORTS
 
 import "./form-share.js";

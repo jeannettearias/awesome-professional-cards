@@ -10,10 +10,9 @@ const linkEmail = document.querySelector(".js__link__email");
 const linkLinkedin = document.querySelector(".js__link__linkedin");
 const linkGithub = document.querySelector(".js__link__github");
 
-const updateTexts = () => {};
+const updateTexts = () => { };
 
 const updateLinks = (ev) => {
-  ev.preventDefault();
   linkPhone.href = `tel:${inputPhone.value}`;
   linkLinkedin.href = `https://www.${inputLinkedin.value}`;
   linkGithub.href = `http://github.com/${inputGithub.value}`;
@@ -21,16 +20,13 @@ const updateLinks = (ev) => {
 };
 updateLinks();
 
-const updateColors = () => {};
+const updateColors = () => { };
 
 const updatePreview = () => {
   updateTexts();
 
   updateLinks();
 
-    updateLinks();
-
-    updateColors();
-
   updateColors();
+
 };
