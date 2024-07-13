@@ -2,11 +2,6 @@
 
 //Global variables
 
-
-"use strict";
-
-//VARIABLES GLOBALES
-
 let data = {
   palette: 1,
   name: "",
@@ -21,6 +16,7 @@ let data = {
 //QUERY SELECTORS
 
 import "./form-fill.js";
+import "./form-share.js";
 import "./preview.js";
 import "./reset.js";
-
+import "./form-design.js";

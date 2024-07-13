@@ -3,10 +3,10 @@
 //QUERY SELECTORS
 const nameInput = document.querySelector('.js__input_name');
 const jobInput = document.querySelector('.js__input_job');
-const phoneInput = document.querySelector('.js__input_phone');
-const emailInput = document.querySelector('.js__input_email');
-const linkedinInput = document.querySelector('.js__input_linkedin');
-const githubInput = document.querySelector('.js__input_github');
+const phoneInput = document.querySelector('.js__inputPhone');
+const emailInput = document.querySelector('.js__inputEmail');
+const linkedinInput = document.querySelector('.js__inputLinkedin');
+const githubInput = document.querySelector('.js__inputGithub');
 
 const namePreview = document.querySelector('.js__namePreview');
 const jobPreview = document.querySelector('.js__jobPreview');

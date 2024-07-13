@@ -1,25 +1,32 @@
 "use strict";
 
-const updateTexts = () => {
+let inputEmail = document.querySelector(".js__inputEmail");
+let inputPhone = document.querySelector(".js__inputPhone");
+let inputLinkedin = document.querySelector(".js__inputLinkedin");
+let inputGithub = document.querySelector(".js__inputGithub");
 
+const linkPhone = document.querySelector(".js__link__phone");
+const linkEmail = document.querySelector(".js__link__email");
+const linkLinkedin = document.querySelector(".js__link__linkedin");
+const linkGithub = document.querySelector(".js__link__github");
+
+const updateTexts = () => { };
+
+const updateLinks = (ev) => {
+  linkPhone.href = `tel:${data.phone}`;
+  linkLinkedin.href = `https://www.linkedin.com/in/${inputLinkedin.value}`;
+  linkGithub.href = `http://github.com/${inputGithub.value}`;
+  linkEmail.href = `mailto:${inputEmail.value}`;
 };
+updateLinks();
 
-const updateLinks = () => {
-
-};
-
-const updateColors = () => {
-
-}
-
-
+const updateColors = () => { };
 
 const updatePreview = () => {
+  updateTexts();
 
-    updateTexts();
+  updateLinks();
 
-    updateLinks();
-
-    updateColors();
+  updateColors();
 
 };

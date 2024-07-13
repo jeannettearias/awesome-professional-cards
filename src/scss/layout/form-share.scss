@@ -1,12 +1,3 @@
-.form-share-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 95%;
-}
-
 .create_Card_btn {
   text-transform: uppercase;
   display: flex;
@@ -48,15 +39,15 @@
   padding: 1px;
 }
 
-/*.create_Card_btn.disabled {
-    background-color: lightgray ;
-    cursor: not-allowed;
-    color: white;
+.disabled {
+  background-color: lightgray;
+  cursor: not-allowed;
+  color: white;
 }
 
 .disabled_icon {
-    color: lightgray ;
-}*/
+  color: lightgray;
+}
 
 .created_Card {
   color: #54585a;
@@ -90,4 +81,25 @@
   cursor: pointer;
   font-size: 16px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-share-section {
+  display: none;
+}
+
+/*.form-share-section.visible {
+  display: block;
+}*/
+.form-share-section.visible {
+  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 95%;
+}
+
+.icon_arrow.active {
+  transform: rotate(180deg);
 }

@@ -1,4 +1,12 @@
-.form-fill-section {
+.form_fill {
+  display: none;
+}
+
+.form_fill.visible {
+  display: block;
+}
+
+.form-fill-section.visible {
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -9,6 +17,7 @@
 }
 
 .form__data {
+  display: none;
   display: flex;
   flex-direction: column;
   margin-bottom: 0.5em;
