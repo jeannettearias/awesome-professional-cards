@@ -10,7 +10,23 @@ const linkEmail = document.querySelector(".js__link__email");
 const linkLinkedin = document.querySelector(".js__link__linkedin");
 const linkGithub = document.querySelector(".js__link__github");
 
-const updateTexts = () => {};
+const updateTexts = () => {
+
+  if (data.name === '') {
+    namePreview.innerHTML = 'Nombre Apellidos';
+  }
+  else {
+    namePreview.innerHTML = data.name;
+  }
+
+
+  if (data.job === '') {
+    jobPreview.innerHTML = 'Front-end developer';
+  }
+  else {
+    jobPreview.innerHTML = data.job;
+  }
+};
 
 const updateLinks = () => {
   linkPhone.href = `tel:${data.phone}`;
@@ -19,7 +35,7 @@ const updateLinks = () => {
   linkEmail.href = `mailto:${data.email}`;
 };
 
-const updateColors = () => {};
+const updateColors = () => { };
 
 const updatePreview = () => {
   updateTexts();
