@@ -89,7 +89,8 @@
 
 /*.form-share-section.visible {
   display: block;
-}*/
+}*/ 
+
 .form-share-section.visible {
   display: block;
   display: flex;
@@ -99,6 +100,7 @@
   text-align: center;
   width: 95%;
 }
+
 
 .icon_arrow.active {
   transform: rotate(180deg);

@@ -1,12 +1,4 @@
-.form_fill {
-  display: none;
-}
-
-.form_fill.visible {
-  display: block;
-}
-
-.form-fill-section.visible {
+.form-fill-section {
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -76,6 +68,13 @@
   background-size: cover;
 }
 
+
 .hidden {
   display: none;
 }
+
+.visible {
+  display: block;
+}
+
+
