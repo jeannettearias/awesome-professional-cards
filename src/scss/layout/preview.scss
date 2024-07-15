@@ -4,7 +4,9 @@
     background-color: #bfcdd0;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    background-image: linear-gradient(to bottom, #bfcdd0, #dde9ed);
     @media (min-width:768px){
         min-height: 100%;
         justify-content: center;
@@ -15,21 +17,28 @@
         justify-content: center;
     }
 }
+.card_box{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
 .button_reset{
   margin-top: 30px;
   width: 75px;
   height: 30px;
+  cursor: pointer;
   border-radius: 15px;
   border: solid 1px #ffffff;
   font-size: 10px;
   background-color: #bfcdd0;
-  align-self: flex-start;
-  margin-left: 45px;
-  @media (min-width:1280px){margin-left:173px ;}
+  
+  
+  
 }
 .preview_photo {
   width: 240px;
   height: 200px;
+  
   background-size: cover;
   background-image: url("../images/photo_preview.jpg");
   margin-top: 2px;
@@ -76,11 +85,13 @@
 .preview_profile_card{
     width: 240px;
     height: 329px;
+    
     background-color:#ffffff ;
     margin-top: 25px;
     border: 0.3px solid rgb(158, 157, 157);
     display: flex;
     flex-direction: column;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
    
    
 
