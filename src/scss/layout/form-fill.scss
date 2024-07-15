@@ -16,6 +16,7 @@
 }
 
 .form__fill_Label {
+  margin-top: 0.5rem;
   margin-bottom: 0.5em;
   color: $dark-green-blue;
   font-family: "Open Sans", sans-serif;
@@ -31,7 +32,9 @@
   padding: 1em;
   color: $dark-green-blue;
   background: transparent;
+  max-width: 450px;
 }
+
 ::placeholder {
   color: $pinkish-grey;
   font-size: 14px;
@@ -53,8 +56,11 @@
   background-color: $dull-orange;
   border: $dull-orange;
   color: $white-four;
-  width: 140px;
+  width: 150px;
   font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 0.5rem;
+  text-align: center;
 }
 
 //checkbox styles
