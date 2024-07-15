@@ -27,19 +27,19 @@ const handleClickCreate = (ev) => {
         }
     })
 
-    .then( response => response.json())
-    .then (dataResponse => {
+        .then(response => response.json())
+        .then(dataResponse => {
 
-        if(dataResponse.success === false) {
-            createMessage.innertHTML = 
-            `<P>Ha sucedido un error al crear la tarjeta</P>
+            if (dataResponse.success === false) {
+                createMessage.innertHTML =
+                    `<P>Ha sucedido un error al crear la tarjeta</P>
              <P>${dataResponse.error}</P>
             `;
-        } else if (dataResponse.success === true) {
-            creatCardLink.innerHTML = `${dataResponse.cardURL}`;
+            } else if (dataResponse.success === true) {
+                creatCardLink.innerHTML = `${dataResponse.cardURL}`;
 
-        }
-    }) 
+            }
+        })
 
 };
 
