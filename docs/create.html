@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet">
+    <title>Awesome Profile Cards</title>
+    <script src="https://kit.fontawesome.com/2ddc0e6d57.js" crossorigin="anonymous"></script>
+
+    <link rel="icon" href="./images/favicon.png" />
+    
+
+    <link rel="stylesheet" href="./assets/main-0af7540b.css">
+  </head>
+
+  <body>
+    <header class="header">
+
+    <a href="#index.html"><img class="logo" src="./images/tarjetas-molonas.png"></a>
+
+
+</header>
+    <!-- main code -->
+
+<main class="main">
+  <!-- Preview -->
+  <section class="main__preview">
+    <div class="preview">
+  <div class="card_box">
+    <button class="button_reset js__resetBtn">
+      <i class="fa-regular fa-trash-can"></i> RESET
+    </button>
+    <div class="preview_profile_card">
+      <div class="preview_titlebox">
+        <div class="green js__linePreview"></div>
+        <div class="preview_header">
+          <h2 class="preview_name js__namePreview">Nombre Apellido</h2>
+          <h3 class="preview_job js__jobPreview">Front-end developer</h3>
+        </div>
+      </div>
+
+      <div class="preview_photo js__profile-image"></div>
+      <nav class="circle_box">
+        <a class="circle js__phonePreview js__linkPreview js__link__phone" href="#"><i
+            class="fa-solid fa-mobile-screen-button"></i></a>
+        <a class="circle js__emailPreview js__linkPreview js__link__email" href="#"><i
+            class="fa-regular fa-envelope"></i></a>
+        <a class="circle js__linkedinPreview js__linkPreview js__link__linkedin" href="#"><i
+            class="fa-brands fa-linkedin-in"></i></a>
+        <a class="circle js__githubPreview js__linkPreview js__link__github" href="#"><i
+            class="fa-brands fa-github-alt"></i></a>
+      </nav>
+    </div>
+  </div>
+</div>
+  </section>
+
+  <!-- FORM  -->
+  <form class="form js__form">
+    <!-- FORM DESIGN -->
+    <fieldset class="form__fieldset">
+      <legend class="form__legend">
+        <i class="fa-solid fa-object-ungroup icon_section" aria-hidden="true"></i>
+        <h2 class="title_section">DISEÑA</h2>
+        <i class="fas fa-chevron-down icon_arrow js__icon_arrow_design" aria-hidden="true"></i>
+      </legend>
+
+      <div><!-- <div class="hidden"> -->
+        <section class="form_design_section js__form_design_section">
+
+    <div class="design__form js__design_form visible">
+
+
+        <h3>COLORES</h3>
+
+
+        <ul class="colors_palettes">
+
+            <!-- --------COLORS 1------------>
+            <li class="first_palette">
+                <label for="palette_1" class="palette_label">
+                    <input checked id="colors1" name="palette" type="radio" value="1"
+                        class="input_palette js__inputPalette1">
+                    <div class="palette palette_color1"></div>
+                    <div class="palette palette_color2"></div>
+                    <div class="palette palette_color3"></div>
+                </label>
+            </li>
+
+            <!-- --------COLORS 2------------>
+
+            <li class="second_palette">
+                <label for="palette_3" class="palette_label">
+                    <input id="colors2" name="palette" type="radio" value="2" class="input_palette js__inputPalette2">
+                    <div class="palette palette_color4"></div>
+                    <div class="palette palette_color5"></div>
+                    <div class="palette palette_color6"></div>
+                </label>
+            </li>
+
+            <!-- --------COLORS 3------------>
+
+            <li class="third_palette">
+                <label for="palette_3" class="palette_label">
+                    <input id="colors3" name="palette" type="radio" value="3" class="input_palette js__inputPalette3">
+                    <div class="palette palette_color7"></div>
+                    <div class="palette palette_color8"></div>
+                    <div class="palette palette_color9"></div>
+                </label>
+            </li>
+        </ul>
+    </div>
+</section>
+      </div>
+    </fieldset>
+
+    <!-- FORM FILL -->
+    <fieldset class="form__fieldset">
+      <legend class="form__legend">
+        <i class="fa-regular fa-keyboard icon_section"></i>
+        <h2 class="title_section">RELLENA</h2>
+        <i class="fas fa-chevron-down icon_arrow js__icon_arrow_fill" aria-hidden="true"></i>
+
+      </legend>
+
+      <div><!-- <div class="hidden"> -->
+        <section class="form-fill-section">
+  <div class="form_fill js__form_fill hidden">
+    <div class="form__data">
+      <label class="form__fill_Label" for="name">Nombre Completo</label>
+      <input class="form__name form__input js__input_name" id="name" type="text" placeholder="Ej: Sally Jill"
+        required />
+    </div>
+    <div class="form__data">
+      <label class="form__fill_Label" for="name">Puesto</label>
+      <input class="form__job form__input js__input_job" type="text" id="job" placeholder="Ej: Front-end unicorn"
+        required />
+    </div>
+
+    <div class="form__img">
+      <label for="photo" class="form__fill_Label" for="image">Imagen del Perfil</label>
+      <div class="img__box">
+        <label for="photo" class="form__btn">Añadir imagen</label>
+        <input class="js__profile-upload-btn hidden" type="file" name="photo" id="photo" />
+        <span class="form__photothumb js__profile-preview"></span>
+      </div>
+    </div>
+    <div class="form__data">
+      <label class="form__fill_Label" for="email">Email</label>
+      <input class="form__email form__input js__inputEmail" type="email" name="email" id="email"
+        placeholder="Ej: sally.hill@gmail.com" />
+    </div>
+    <div class="form__data">
+      <label class="form__fill_Label" for="phone">Teléfono</label>
+      <input class="form__phone form__input js__inputPhone" type="number" name="phone" id="phone"
+        placeholder="Ej: 5555-55-55-55" />
+    </div>
+    <div class="form__data">
+      <label class="form__fill_Label" for="linkedin">Linkedin</label>
+      <input class="form__linkedin form__input js__inputLinkedin" type="text" name="linkedin" id="linkedin"
+        placeholder="Ej: linkedin.com/in/sally-hill" />
+    </div>
+    <div class="form__data">
+      <label class="form__fill_Label" for="github">Github</label>
+      <input class="form__github form__input js__inputGithub" type="text" name="github" id="github"
+        placeholder="Ej: @sally-hill" />
+    </div>
+  </div>
+
+</section>
+      </div>
+    </fieldset>
+
+    <!-- FORM SHARE -->
+    <fieldset class="form__fieldset js__form_fieldset_share">
+      <legend class="form__legend">
+        <i class="fa-solid fa-share-nodes icon_section"></i>
+        <h2 class="title_section">COMPARTE</h2>
+        <i class="fas fa-chevron-down icon_arrow js__icon_arrow_share" aria-hidden="true"></i>
+
+      </legend>
+
+      <div><!-- <div class="hidden"> -->
+        <section class="form-share-section js__form-share-section hidden">
+    <button class="create_Card_btn js__createCardBtn">
+        <span class="icon-wrapper">
+            <i class="fa-solid fa-address-card create_Card_icon js__createCardIcon"></i>
+        </span>
+        Crear Tarjeta
+    </button>
+    <div class="js__createMessage"></div>
+    <h2 class="created_Card">La tarjeta ha sido creada:</h2>
+    <a class="creat_Card_link js__creatCardLink"
+        href="dataResponse.cardURL">https://awesome-profile-card.com?id=A456DF0001</a>
+    <a class="twitter_btn" href="https://x.com/home" target="_blank">
+        <i class="fa-brands fa-twitter twitter_icon"></i> Compartir en Twitter
+    </a>
+
+</section>
+      </div>
+    </fieldset>
+  </form>
+</main>
+    <footer class="footer">
+
+
+    <p class="footer__text">&copy; Awesome profile-cards @2024</p>
+    <a target="_blank" href="https://Adalab.es"><img class="footer__logo" src="./images/logo-adalab.png"
+            alt="logo Adalab"></a>
+
+
+
+</footer>
+
+
+    <script src="./js/main.js"></script>
+  </body>
+
+</html>
