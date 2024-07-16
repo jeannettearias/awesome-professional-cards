@@ -38,7 +38,6 @@ body {
     align-items: left;
     flex-direction: column;
     width: 100%;
-    padding-inline: 20px;
     margin-right: 30px;
     padding-top: 27px;
 
@@ -70,6 +69,18 @@ body {
     .form {
       width: 30%;
       order: 1;
+    }
+
+    @media (min-width: 320px) {
+      .main__preview {
+        width: 60%;
+        order: 2;
+      }
+
+      .form {
+        width: 40%;
+        order: 1;
+      }
     }
   }
 }
