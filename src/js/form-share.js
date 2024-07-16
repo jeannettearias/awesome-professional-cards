@@ -11,6 +11,7 @@ const designForm = document.querySelector(".js__design_form");
 const formFill = document.querySelector(".js__form_fill");
 const createMessage = document.querySelector(".js__createMessage");
 const creatCardLink = document.querySelector(".js__creatCardLink");
+const twitterBtn = document.querySelector('.js__twitterBtn');
 
 const handleClickCreate = (ev) => {
     ev.preventDefault();
@@ -37,6 +38,12 @@ const handleClickCreate = (ev) => {
                 createMessage.classList.add('visible');
                 createCardBtn.classList.add("disabled");
                 createCardIcon.classList.add("disabled_icon");
+             
+                const tweetUrl = (dataResponse.cardURL); 
+                twitterBtn.href = `https://twitter.com/intent/tweet?url=${tweetUrl}`; 
+                twitterBtn.style.display = 'inline-block';
+
+
 
             }
         })
