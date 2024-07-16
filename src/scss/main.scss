@@ -33,14 +33,13 @@ body {
     min-height: 852px;
   }
 
-  /*   justify-content: center; */
-  /*   align-items: center; */
   .form {
     align-items: left;
     flex-direction: column;
     width: 100%;
     margin-right: 30px;
     padding-top: 27px;
+    padding-inline: 20px;
 
     @media (min-width: 768px) {
       padding-top: 0%;
@@ -70,18 +69,6 @@ body {
     .form {
       width: 30%;
       order: 1;
-    }
-
-    @media (min-width: 320px) {
-      .main__preview {
-        width: 60%;
-        order: 2;
-      }
-
-      .form {
-        width: 40%;
-        order: 1;
-      }
     }
   }
 }
