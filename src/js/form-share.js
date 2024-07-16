@@ -14,16 +14,13 @@ const creatCardLink = document.querySelector('.js__creatCardLink');
 
 const handleClickCreate = (ev) => {
     ev.preventDefault();
-    console.log("boton clickeado");
-    createCardBtn.classList.add("disabled");
-    createCardIcon.classList.add("disabled_icon");
-
+    console.log("boton clickeado");   
 
     fetch('https://dev.adalab.es/api/card/', {
         method: 'POST',
         body: JSON.stringify(data),
         headers: {
-            'content-type': 'aplication/json'
+            'content-type': 'application/json'
         }
     })
 
@@ -31,12 +28,15 @@ const handleClickCreate = (ev) => {
         .then(dataResponse => {
 
             if (dataResponse.success === false) {
-                createMessage.innertHTML =
+                createMessage.innerHTML =
                     `<P>Ha sucedido un error al crear la tarjeta</P>
              <P>${dataResponse.error}</P>
             `;
             } else if (dataResponse.success === true) {
-                creatCardLink.innerHTML = `${dataResponse.cardURL}`;
+                creatCardLink.innerHTML = `<a href="${dataResponse.cardURL}" target="_blank" class="creat_Card_link">${dataResponse.cardURL}</a>`;
+                createMessage.classList.add('visible');
+                createCardBtn.classList.add("disabled");
+                createCardIcon.classList.add("disabled_icon");
 
             }
         })
