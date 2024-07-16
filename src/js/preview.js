@@ -4,11 +4,14 @@ let inputEmail = document.querySelector(".js__inputEmail");
 let inputPhone = document.querySelector(".js__inputPhone");
 let inputLinkedin = document.querySelector(".js__inputLinkedin");
 let inputGithub = document.querySelector(".js__inputGithub");
+const inputImage = document.querySelector('.js__profile-image');
+const previewImage = document.querySelector('.js__profile-preview');
 
 const linkPhone = document.querySelector(".js__link__phone");
 const linkEmail = document.querySelector(".js__link__email");
 const linkLinkedin = document.querySelector(".js__link__linkedin");
 const linkGithub = document.querySelector(".js__link__github");
+
 
 const updateTexts = () => {
   if (data.name === "") {
@@ -35,10 +38,24 @@ const updateColors = () => {
   refreshPalletsStyles();
 };
 
+//Reset image 
+const updateImage = () => {
+  if (data.photo === '') {
+    previewImage.setAttribute('style', '');
+    inputImage.setAttribute('style', '');
+  } else if (data.photo.trim() > 0) { //remove the blank space to the string
+    previewImage.setAttribute('style', data.photo);
+    inputImage.setAttribute('style', data.photo);
+  }
+}
+
 const updatePreview = () => {
   updateTexts();
 
   updateLinks();
 
   updateColors();
+
+  updateImage();
 };
+
