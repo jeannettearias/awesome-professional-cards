@@ -67,20 +67,27 @@
   text-decoration: none;
   color: $dull-orange;
   margin-bottom: 12px;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .twitter_btn {
-  display: flex;
+  display: none;
+  margin-top: 10px;
+  margin-left: 60px;
   text-align: center;
+  align-items: center;
   justify-content: center;
   text-decoration: none;
   background-color: #1da1f2;
   color: white;
   border: none;
-  margin-bottom: 10px;
+  margin-bottom: 10px auto;
   padding: 8px 16px;
   border-radius: 5px;
   cursor: pointer;
+  width: fit-content;
   font-size: 16px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
