@@ -14,6 +14,8 @@ const handleClickReset = (ev) => {
   };
   createCardBtn.classList.remove("disabled");
   createCardIcon.classList.remove("disabled_icon");
+  createMessage.classList.remove('visible');
+  createMessage.classList.add('hidden');
 
   formReset.reset();
 
