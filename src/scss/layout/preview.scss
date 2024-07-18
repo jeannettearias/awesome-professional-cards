@@ -23,6 +23,8 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  @media (min-width: 768px){
+  margin-top: -20%;}
 }
 .button_reset {
   margin-top: 30px;
@@ -33,6 +35,7 @@
   border: solid 1px #ffffff;
   font-size: 10px;
   background-color: #bfcdd0;
+  color:#54585a;
 }
 .preview_photo {
   width: 240px;
